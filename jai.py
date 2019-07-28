@@ -53,3 +53,18 @@ TrnUserIdsLst=GenderTrainDf['userid'].values
 TrnGenderLst=GenderTrainDf['gender'].values
 TstUserIdsLst=GenderTestDf['userid'].values
 print(readFile(Part1,10))
+
+def removeFromSpecialChar(item):
+    itemExt=item
+    print(itemExt)
+    if '(' in item:
+        itemExt=itemExt[:itemExt.find('(')]
+        print(itemExt)
+    if '.' in item:
+        itemExt=itemExt[:itemExt.find('.')]
+        print(itemExt)
+    if '[' in item:
+        itemExt=itemExt[:itemExt.find('[')]
+        print(itemExt)
+    return itemExt
+df.applymap(removeFromSpecialChar)
