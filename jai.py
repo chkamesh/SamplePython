@@ -70,3 +70,4 @@ def removeFromSpecialChar(item):
 df.applymap(removeFromSpecialChar)
 #unique_test_data=test_data.drop_duplicates(subset=None, keep='first', inplace=False)
 #unique_test_data_cleaned= [w.replace('\r', ' ') for w in unique_test_data_cleaned]
+#unique_train_data_cleaned= [''.join([i for i in w if not i.isdigit()]) for w in unique_train_data_cleaned]
