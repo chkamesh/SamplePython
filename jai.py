@@ -68,3 +68,5 @@ def removeFromSpecialChar(item):
         print(itemExt)
     return itemExt
 df.applymap(removeFromSpecialChar)
+
+#unique_test_data_cleaned= [w.replace('\r', ' ') for w in unique_test_data_cleaned]
